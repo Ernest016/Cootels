@@ -1,0 +1,241 @@
+/*Обнуляющие стили*/
+
+/*Очистим все отступы и границы*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*Убираем линии обводки некоторых браузеров*/
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+/*задаем блочными теги Html5*/
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    color: #1e1744;
+
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*задаем наследование шрифтов*/
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: #0E1734;
+    color: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: inherit;
+    font-weight: 600;
+    font-size: 36px;
+    color: #192252;
+    line-height: 150%;
+}
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #848FAC;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header {
+    margin-top: 37px;
+    color: #192252;
+}
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    & button {
+        padding: 14px 16px;
+    }
+}
+.header__logo {
+    font-size: 32px;
+}
+.header__center {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 22.7%;
+    font-size: 16px;
+    & > p {
+        font-weight: 500;
+        color: #192252;
+    }
+}
+.section1 {
+    padding: 80px 0;
+}
+.section1_flex {
+    display: flex;
+    justify-content: space-between;
+}
+.section1__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 47%;
+    justify-content: space-evenly;
+    & > h1 {
+        font-size: 48px;
+    }
+}
+.section2__right > img {
+    box-shadow: 0px 20px 27px -11px rgba(34, 60, 80, 0.2);
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.section2 {
+    padding: 80px 0;
+    & h1 {
+        margin-bottom: 24px;
+    }
+    & p {
+        margin-bottom: 32px;
+    }
+}
+.section2_flex {
+    display: flex;
+    justify-content: space-between;
+}
+.section2__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 57.5%;
+    justify-content: center;
+}
+.section3 {
+    padding: 80px 0;
+    & h1 {
+        margin-bottom: 24px;
+    }
+}
+.section3_flex {
+    display: flex;
+    flex-direction: column;
+}
+.section3__top,
+.section3__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section3__top__left,
+.section3__bottom__right {
+    flex-basis: 53%;
+}
+.section3__top {
+    margin-bottom: 32px;
+}
+.section4 {
+    padding: 80px 0;
+}
+.section4_flex {
+    display: flex;
+    flex-direction: column;
+}
+.section4__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & p {
+        margin: 24px 0 32px 0;
+        line-height: 150%;
+    }
+}
+.section4__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.section4__bottom__left,
+.section4__bottom__center,
+.section4__bottom__right {
+    flex-basis: 32%;
+    & > h1 {
+        font-size: 24px;
+        color: black;
+        margin: 32px 0 16px 0;
+    }
+    & > p {
+        margin-bottom: 32px;
+        line-height: 150%;
+    }
+    & > button {
+        background: none;
+        color: #424F7B;
+        padding: 0;
+    }
+}
